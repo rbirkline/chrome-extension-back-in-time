@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+<style>
+  body{
+    display:block;
+    width: 300px;
+    height: 200px;
+  }
+  #animation{
+    padding-top:30px;
+    font-weight:bold;
+    overflow:hidden;
+  }
+  #animation .slides{
+    width: 5000px;
+  }
+  #animation .slides div{
+    display:inline-block;
+    width: 300px;
+    font-size: 2em;
+    text-align:center;
+  }
+  #animation .slides img{
+    width: 100px;
+    height: 100px;
+    display:block;
+    margin: 10px auto;
+  }
+</style>
+<link href="../css/animate.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+
+<audio id="modem" src="../sounds/dial-up-modem-01.mp3" ></audio>
+
+<div id="animation">
+  <div class="slides">
+    <div class="step">
+      <img src="../images/phone-call.svg" />
+      Getting dial tone...
+    </div>
+    <div class="step">
+      <img src="../images/wifi.svg" />
+      Number found, Dialing...
+    </div>
+    <div class="step">
+      <img src="../images/audio-wave.svg" />
+      Contacting the internet...
+    </div>
+    <div class="step">
+      <img src="../images/share.svg" />
+      Connected....
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+<script src="popup.js"></script>

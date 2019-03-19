@@ -1,35 +1,23 @@
 {
-    "name": "Play a sound",
+    "name": "Back in time",
     "version": "1.0",
-    "description": "Ever want to play a sound when a key is pressed.  This extension will play a sound on a CTRL+Z.",
+    "description": "Build an extension for my friend Bill.  This extension will make it look like you are going back in time using a modem sound. Icon made by https://www.freepik.com/ from https://www.flaticon.com/ is licensed by Creative Commons BY 3.0",
     "manifest_version": 2,
-
-    "permissions": ["storage"],
 
     "background": {
       "scripts": ["background.js"],
       "persistent": false
     },
-    "options_page": "files/options.html",
 
-
-    "commands": {
-        "trigger_sound": {
-          "suggested_key": {
-            "default": "Ctrl+Z"
-          },
-          "description": "Toggle Sound"
-        }
-      },
-
-    "page_action": {
+    "browser_action": {
+      "default_popup": "files/popup.html",
       "default_icon": {
-        "16": "images/speaker16.png",
-        "128": "images/speaker128.png"
+        "16": "icons/smartphone-screen-with-sound-line16.png",
+        "128": "icons/smartphone-screen-with-sound-line128.png"
       }
     },
     "icons": {
-      "16": "images/speaker16.png",
-      "128": "images/speaker128.png"
+      "16": "icons/smartphone-screen-with-sound-line16.png",
+      "128": "icons/smartphone-screen-with-sound-line128.png"
     }
   }
